@@ -1,0 +1,5 @@
+.example {
+  /* Calculate margin by combining a relative percentage and a fixed pixel value */
+  /* This ensures a flexible layout while maintaining a minimum fixed offset */
+    margin-left: calc(5% + 5px);
+}

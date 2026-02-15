@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session07</title>
+    <link rel="stylesheet" href="./Session07.css">
+</head>
+<body>
+    <!-- الكود ده بيخلي المتصفح يختار الصورة المناسبة مع حجم الشاشة -->
+    <picture>
+        <!-- لو الشاشة اكبر من 1000 بيكسل هنستخدم الصورة الاولى -->
+        <source srcset="image1.jpg" media="(min-width: 1000px)" />
+        <!-- لو الشاشة اكبر من 750 بيكسل واقل من 1000 هنستخدم الصورة الاولى -->
+        <source srcset="image2.jpg" media="(min-width: 750px)" />
+        <!-- لو الشاشة اقل من 750 بيسكل هشتغل ع الصورة دي -->
+        <img src="image3.jpg" alt="Description of the image" />
+    </picture>
+
+    <table>
+        <tr>
+            <!-- "الـ scope وظيفتها الأساسية هي الربط المنطقي بين عناوين الجدول وبياناته. لما بنستخدم scope="row"
+             ، إحنا بنحدد إن الخلية دي هي الرأس أو العنوان لكل اللي جاي بعدها في نفس الصف 
+            -->
+            <th scope="row">Header</th>
+            
+            <td>10</td>
+            <td>18</td>
+        </tr>
+    </table>
+</body>
+</html>
